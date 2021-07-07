@@ -6,6 +6,7 @@ import { HomeDashboardComponent } from './home-dashboard/home-dashboard.componen
 import { ReporteActividadesComponent } from './reporte-actividades/reporte-actividades.component';
 import { BusquedaActividadesComponent } from './busqueda-actividades/busqueda-actividades.component';
 import { AppRoutingModule } from '../../app-routing.module';
+import { ComunesModule } from '../comunes/comunes.module';
 
 
 
@@ -20,6 +21,7 @@ import { AppRoutingModule } from '../../app-routing.module';
   imports: [
     CommonModule,
     AppRoutingModule,
+    ComunesModule,
   ]
 })
 export class DashboardModule { }

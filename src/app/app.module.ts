@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { DashboardModule } from './layout/dashboard/dashboard.module';
 import { AutenticacionModule } from './layout/autenticacion/autenticacion.module';
+import { ComunesModule } from './layout/comunes/comunes.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AutenticacionModule } from './layout/autenticacion/autenticacion.module
     BrowserAnimationsModule,
     DashboardModule,
     AutenticacionModule,
+    ComunesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

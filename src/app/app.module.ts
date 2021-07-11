@@ -8,11 +8,15 @@ import { LoginComponent } from './login/login.component';
 import { DashboardModule } from './layout/dashboard/dashboard.module';
 import { AutenticacionModule } from './layout/autenticacion/autenticacion.module';
 import { ComunesModule } from './layout/comunes/comunes.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MaterialImportModule } from './material-import';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -21,8 +25,14 @@ import { ComunesModule } from './layout/comunes/comunes.module';
     DashboardModule,
     AutenticacionModule,
     ComunesModule,
+    NgbModule,
+    MaterialImportModule,
+
   ],
   providers: [],
+  exports: [
+    MaterialImportModule,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

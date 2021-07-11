@@ -22,6 +22,9 @@ import { ComunesModule } from '../comunes/comunes.module';
     CommonModule,
     AppRoutingModule,
     ComunesModule,
+  ],
+  exports: [
+    ComunesModule,
   ]
 })
 export class DashboardModule { }
